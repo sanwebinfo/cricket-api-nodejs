@@ -76,38 +76,7 @@ router.get('/', cache('2 minutes'), apiRequestLimiter, function(req, res) {
         var runrate = $("span[class='crr']").eq(0).text();
         var commentary = $("p[class='commtext']").text();
 
-        var livescore = ({
-            title: title || "Data Not Found",
-            update: update || "Data Not Found",
-            current: currentscore || "Data Not Found",
-            batsman: batsman || "Data Not Found",
-            batsmanrun: batsmanrun || "Data Not Found",
-            ballsfaced: ballsfaced || "Data Not Found",
-            fours: fours || "Data Not Found",
-            sixes: sixes || "Data Not Found",
-            sr: sr || "Data Not Found",
-            batsmantwo: batsmantwo || "Data Not Found",
-            batsmantworun: batsmantworun || "Data Not Found",
-            batsmantwoballsfaced: batsmantwoballsfaced || "Data Not Found",
-            batsmantwofours: batsmantwofours || "Data Not Found",
-            batsmantwosixes: batsmantwosixes || "Data Not Found",
-            batsmantwosr: batsmantwosr || "Data Not Found",
-            bowler: bowler || "Data Not Found",
-            bowlerover: bowlerover || "Data Not Found",
-            bowlerruns: bowlerruns || "Data Not Found",
-            bowlerwickets: bowlerwickets || "Data Not Found",
-            bowlermaiden: bowlermaiden || "Data Not Found",
-            bowlertwo: bowlertwo || "Data Not Found",
-            bowletworover: bowletworover || "Data Not Found",
-            bowlertworuns: bowlertworuns || "Data Not Found",
-            bowlertwowickets: bowlertwowickets || "Data Not Found",
-            bowlertwomaiden: bowlertwomaiden || "Data Not Found",
-            partnership: partnership || "Data Not Found",
-            recentballs: recentballs || "Data Not Found",
-            lastwicket: lastwicket || "Data Not Found",
-            runrate: runrate || "Data Not Found",
-            commentary: commentary || "Data Not Found"
-        });
+        var livescore = ({title: title || "Data Not Found",update: update || "Data Not Found",current: currentscore || "Data Not Found",batsman: batsman || "Data Not Found",batsmanrun: batsmanrun || "Data Not Found",ballsfaced: ballsfaced || "Data Not Found",fours: fours || "Data Not Found",sixes: sixes || "Data Not Found",sr: sr || "Data Not Found",batsmantwo: batsmantwo || "Data Not Found",batsmantworun: batsmantworun || "Data Not Found",batsmantwoballsfaced: batsmantwoballsfaced || "Data Not Found",batsmantwofours: batsmantwofours || "Data Not Found",batsmantwosixes: batsmantwosixes || "Data Not Found",batsmantwosr: batsmantwosr || "Data Not Found",bowler: bowler || "Data Not Found",bowlerover: bowlerover || "Data Not Found",bowlerruns: bowlerruns || "Data Not Found",bowlerwickets: bowlerwickets || "Data Not Found",bowlermaiden: bowlermaiden || "Data Not Found",bowlertwo: bowlertwo || "Data Not Found",bowletworover: bowletworover || "Data Not Found",bowlertworuns: bowlertworuns || "Data Not Found",bowlertwowickets: bowlertwowickets || "Data Not Found",bowlertwomaiden: bowlertwomaiden || "Data Not Found",partnership: partnership || "Data Not Found",recentballs: recentballs || "Data Not Found",lastwicket: lastwicket || "Data Not Found",runrate: runrate || "Data Not Found",commentary: commentary || "Data Not Found"});
 
         res.send(JSON.stringify(livescore, null, 4));
 
