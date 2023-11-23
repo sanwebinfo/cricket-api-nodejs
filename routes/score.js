@@ -8,8 +8,8 @@ const { rateLimit } = require('express-rate-limit');
 const rua = randomUseragent.getRandom();
 const cache = apicache.middleware
 const matchdata = require('../utlis/app.json');
-const { dummydata } = require('../utlis/error.js');
-const { errormsg } = require('../utlis/msg.js');
+const {dummydata} = require('../utlis/error.js');
+const {errormsg} = require('../utlis/msg.js');
 
 const apiRequestLimiter = rateLimit({
     windowMs: 1 * 60 * 1000,
