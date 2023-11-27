@@ -45,7 +45,7 @@ router.get('/', cache('2 minutes'), apiRequestLimiter, function(req, res) {
 
         $ = cheerio.load(response.data);
 
-        var newsa = $('h1.data-vr-headline').text();
+        var newsa = $("h1.data-vr-headlin").text();
         var newsb = $('h2.data-vr-headline').eq(0).text();
         var newsc = $('h2.data-vr-headline').eq(1).text();
         var newsd = $('h2.data-vr-headline').eq(2).text();
