@@ -24,7 +24,7 @@ app.use(cors({
 const home = require('./routes/home');
 const live = require('./routes/live');
 const score = require('./routes/score');
-const score = require('./routes/geo');
+const geo = require('./routes/geo');
 app.use('/', home);
 app.use('/live', live);
 app.use('/score', score);
