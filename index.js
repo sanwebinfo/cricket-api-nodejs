@@ -24,10 +24,11 @@ app.use(cors({
 const home = require('./routes/home');
 const live = require('./routes/live');
 const score = require('./routes/score');
-
+const score = require('./routes/geo');
 app.use('/', home);
 app.use('/live', live);
 app.use('/score', score);
+app.use('/geo', geo);
 
 app.disable("x-powered-by");
 
