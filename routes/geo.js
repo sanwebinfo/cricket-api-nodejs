@@ -33,7 +33,7 @@ router.get('/', cache('2 minutes'), apiRequestLimiter, function(req, res) {
     const match_url = req.query.url;
 
     let str = match_url || '';
-    let live_url = str.replace('www', 'm');
+    let live_url = str;
 
     axios({
         method: 'GET',
