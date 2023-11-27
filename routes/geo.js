@@ -46,15 +46,15 @@ router.get('/', cache('2 minutes'), apiRequestLimiter, function(req, res) {
         $ = cheerio.load(response.data);
 
         var newsb = $('div[class="heading"]').eq(0).text();
-        var newsc = $('h2.data-vr-headline').eq(1).text();
-        var newsd = $('h2.data-vr-headline').eq(2).text();
-        var newse = $('h2.data-vr-headline').eq(3).text();
-        var newsf = $('h2.data-vr-headline').eq(4).text();
-        var newsg = $('h2.data-vr-headline').eq(5).text();
-        var newsh = $('h2.data-vr-headline').eq(6).text();
-        var newsi = $('h2.data-vr-headline').eq(7).text();
-        var newsj = $('h2.data-vr-headline').eq(8).text();
-        var newsk = $('h2.data-vr-headline').eq(9).text();
+        var newsc = $('div[class="heading"]').eq(1).text();
+        var newsd = $('div[class="heading"]').eq(2).text();
+        var newse = $('div[class="heading"]').eq(3).text();
+        var newsf = $('div[class="heading"]').eq(4).text();
+        var newsg = $('div[class="heading"]').eq(5).text();
+        var newsh = $('div[class="heading"]').eq(6).text();
+        var newsi = $('div[class="heading"]').eq(7).text();
+        var newsj = $('div[class="heading"]').eq(8).text();
+        var newsk = $('div[class="heading"]').eq(9).text();
         
         
         
