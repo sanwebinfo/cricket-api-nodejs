@@ -21,6 +21,7 @@ app.use(cors({
     }
 }));
 
+const mr-malik-main = require('./routes/mr-malik-main');
 const home = require('./routes/home');
 const live = require('./routes/live');
 const score = require('./routes/score');
@@ -29,7 +30,7 @@ app.use('/', home);
 app.use('/live', live);
 app.use('/score', score);
 app.use('/geo', geo);
-
+app.use('/mr-malik-main', mr-malik-main);
 app.disable("x-powered-by");
 
 app.use('/', function(req, res) {
